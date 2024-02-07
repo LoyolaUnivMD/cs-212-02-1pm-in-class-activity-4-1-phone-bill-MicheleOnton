@@ -1,1 +1,5 @@
-Test cases go here. 
+the user enters "green" , the number of GB she used is 5 and she has a coupon. The monthly bill would be $74.99
+the user enters "green" , the number of GB she used is 5 and she does not have a coupon. The monthly bill would be $94.99
+the user enters "blue" , the number of GB she used is 8. The monthly bill would be $110
+the user enters "purple" , the number of GB is unlimited so it doesnt matter what number of GB she used. The monthly bill would be $99.95
+

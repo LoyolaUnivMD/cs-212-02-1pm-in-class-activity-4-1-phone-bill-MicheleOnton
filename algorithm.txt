@@ -1,1 +1,40 @@
-THINK before you code...
+0) import Scanner and DecimalFormat
+
+1) Initialize the variables we will use :
+    int discount = 20;
+    int data_incl;
+    int price_per_GB;
+    double price;
+    int data_price;
+
+2)Prompt the user, "What subscription do you have? (green, blue, purple): " and save it as sub and then as subscription by using .toLowerCase()
+
+3)Prompt the user, "How many Gigabits of data did you use? " and save it as "data"
+
+4)if package is equal to "green" || package is equal to "blue" || package is equal to "purple"
+
+  a)Set the values according to the subscription the user has.
+  b)If package is equal to "green"
+    1) data_incl = 2;
+    2)price_per_GB =15;
+    3)price = 49.99;
+    Prompt the user "Do you have a coupon? (Enter 'yes' or 'no'): "
+    if the user enters yes
+        price = price - discount;
+
+  c)else if package is equal to "blue"
+    1) data_incl = 4;
+    2)price_per_GB = 10;
+    3)price = 70;
+
+  d) else
+    1) price = 99.95;
+
+  e)if package is not equal to "purple" && data >= data_incl
+    1)data_price = (data - data_incl) * price_per_GB;
+    2)price += data_price;
+
+  f)Output "Your monthly bill is $" + df.format(price)
+
+5)else
+  a)Output "This subscription is not valid"
